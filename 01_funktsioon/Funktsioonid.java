@@ -6,7 +6,7 @@ public class Funktsioonid {
         System.out.println(sõiduMaksumus);
 
         prindiForTsükkel(5);
-        
+
         System.out.println(temperatuuriHinnang(-2));
         String hinnang = temperatuuriHinnang(-2);
         System.out.println(hinnang);
