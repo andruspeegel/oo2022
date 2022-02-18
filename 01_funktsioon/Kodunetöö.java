@@ -14,6 +14,7 @@ public class Kodunetöö {
         System.out.println(protsent64st(muutuja));
 
     }
+    //Arvutab 0-100 punkti vältel tulemuse mingile testile vms.
     public static String tulemuseHinnang(float punktid) {
         if (punktid >= 0 && punktid <= 50) {
             return "Ei ole positiivne hinne (F)";
@@ -31,6 +32,8 @@ public class Kodunetöö {
             return "Tulemust ei ole võimalik leida.";
         }
     }
+    //Kui kirjutada Tallinn, siis kinnitab, et ikka tead, mis linn on Eesti pealinn. Algne plaan oli
+    //teha Euroopa kohta või rohkem, aga aja kokkuhoiu mõttes võtsin ainult Eesti.
     public static String EestiPealinn(String nimi){
         if (nimi.equals("Tallinn")){
             return "See on tõesti Eesti pealinna nimi.";
@@ -38,6 +41,7 @@ public class Kodunetöö {
             return "See ei ole Eesti pealinna nimi";
         }
     }
+    //Lihtne protsendi arvutus arvust 64. Tegin sisendiga, et saaks natuke rohkem interaktsiooni.
     public static float protsent64st(float muutuja){
         return Math.round((muutuja/64)*100);
     }
