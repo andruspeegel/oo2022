@@ -1,13 +1,11 @@
 package Homework;
 
-import static Homework.NewSession.basepoints;
-
-public class QuestionOne {
+public class QuestionOne extends PointCounter {
     public void firstQuestion(String input) {
         switch (input) {
             case "a":
                 System.out.println("Õige vastus");
-                basepoints = basepoints + 1;
+                basepoints = basepoints + TwoPoint;
                 break;
             case "b":
                 System.out.println("Vale vastus");

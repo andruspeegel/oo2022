@@ -2,7 +2,7 @@ package Homework;
 
 import java.util.Scanner;
 
-import static Homework.NewSession.basepoints;
+import static Homework.PointCounter.basepoints;
 
 public class MAIN {
     public static void main(String[] args) {

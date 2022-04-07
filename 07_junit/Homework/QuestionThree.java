@@ -1,8 +1,6 @@
 package Homework;
 
-import static Homework.NewSession.basepoints;
-
-public class QuestionThree {
+public class QuestionThree extends PointCounter {
     public void thirdQuestion(String input) {
         switch (input) {
             case "a":
