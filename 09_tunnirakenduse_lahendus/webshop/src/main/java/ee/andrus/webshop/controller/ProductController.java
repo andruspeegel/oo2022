@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class ProductController {
 
     @Autowired
@@ -42,5 +43,10 @@ public class ProductController {
     @PutMapping("products") // localhost:8080/products  PUT
     public void editProduct(@RequestBody Product product) {
         productRepository.save(product);
+    }
+
+    @PostMapping("add-all-products") // localhost:8080/add-all-products  POST
+    public void addAllProducts(@RequestBody List<Product> products) {
+        productRepository.saveAll(products);
     }
 }
