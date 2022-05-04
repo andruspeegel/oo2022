@@ -20,6 +20,15 @@ function Navbar(){
     <Link to="ostukorv">
     <div className="nav-link">Ostukorv</div>
     </Link>
+    <Link to="lisa_kysimus">
+    <div className="nav-link">Küsimuste lisamine</div>
+    </Link>
+    <Link to="halda_kysimusi">
+    <div className="nav-link">Halda küsimusi</div>
+    </Link>
+    <Link to="vasta_kysimustele">
+    <div className="nav-link">Vasta küsimustele</div>
+    </Link>
   </div>
 </div>
 </div>
